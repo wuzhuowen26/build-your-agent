@@ -24,9 +24,9 @@ BOHRIUM_EXECUTOR = {
         "batch_type": "Bohrium",
         "context_type": "Bohrium",
         "remote_profile": {
-            "email": os.getenv("BOHRIUM_EMAIL"),
-            "password": os.getenv("BOHRIUM_PASSWORD"),
-            "program_id": int(os.getenv("BOHRIUM_PROJECT_ID")),
+            "email": os.getenv("wuzw22@mails.tsinghua.edu.cn"),
+            "password": os.getenv("wu@12345"),
+            "program_id": int(os.getenv("678501")),
             "input_data": {
                 "image_name": "registry.dp.tech/dptech/dp/native/prod-19853/dpa-mcp:0.0.0",
                 "job_type": "container",
@@ -47,7 +47,7 @@ BOHRIUM_STORAGE = {
 }
 
 
-server_url = "http://kqti1328990.bohrium.tech:50001/sse"
+server_url = "http://47.92.29.44:50001/sse"
 session_service = InMemorySessionService()
 
 # Initialize MCP tools and agent
