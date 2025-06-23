@@ -41,9 +41,9 @@ LOCAL_EXECUTOR = {
 }
 BOHRIUM_STORAGE = {
     "type": "bohrium",
-    "username": os.getenv("BOHRIUM_EMAIL"),
-    "password": os.getenv("BOHRIUM_PASSWORD"),
-    "project_id": int(os.getenv("BOHRIUM_PROJECT_ID"))
+    "username": os.getenv("wuzw22@mails.tsinghua.edu.cn"),
+    "password": os.getenv("wu@12345"),
+    "project_id": int(os.getenv("678501"))
 }
 
 
