@@ -13,7 +13,7 @@ import openai
 # Set environment variables if needed
 
 #Use deepseek
-os.environ['DEEPSEEK_API_KEY'] = ""
+os.environ['DEEPSEEK_API_KEY'] = "sk-d3c4dc3f27b041feab840268a233736d"
 
 #Use gpt-4o
 os.environ["AZURE_OPENAI_ENDPOINT"] = ""
@@ -23,12 +23,12 @@ os.environ["AZURE_OPENAI_DEPLOYMENT_NAME"] = ""
 
 # Configure SSE params
 sse_params = SseServerParams(
-    url="",  
+    url="http://47.92.125.56:50001/sse",  
 )
 
 toolset = MCPToolset(
     connection_params=SseServerParams(
-        url="",
+        url="http://47.92.125.56:50001/sse",
     ),
 )
 
