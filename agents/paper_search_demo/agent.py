@@ -12,7 +12,7 @@ from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.adk.tools.mcp_tool.mcp_session_manager import SseServerParams
 from google.genai import types
-
+from google.adk.agents import Agent
 
 # Set environment variables if needed
 
@@ -25,17 +25,11 @@ os.environ["AZURE_OPENAI_API_KEY"] = ""
 os.environ["AZURE_OPENAI_DEPLOYMENT_NAME"] = ""
 
 
-# Configure SSE params
-sse_params = SseServerParams(
-    url="http://47.92.30.41:50001/sse",  
-)
-
-toolset = MCPToolset(
+toolset = CalculationMCPToolset(
     connection_params=SseServerParams(
         url="http://47.92.30.41:50001/sse",
     ),
 )
-
 
 use_model = "deepseek"
 
