@@ -47,7 +47,7 @@ BOHRIUM_STORAGE = {
 }
 
 
-server_url = "http://<remote-machine-url>:<port>/sse"
+server_url = "http://47.92.30.41:50001/sse"
 
 # Initialize MCP tools and agent
 mcp_tools = CalculationMCPToolset(
@@ -58,7 +58,7 @@ mcp_tools = CalculationMCPToolset(
 
 
 root_agent = LlmAgent(
-    model=LiteLlm(model="azure/gpt-4o"),
+    model=LiteLlm(model="deepseek/deepseek-chat"),
     name="dpa_calculations_agent",
     description="An agent specialized in computational research using Deep Potential",
     instruction=(
